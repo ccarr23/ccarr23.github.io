@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- 
+    Name: Corey Carr
+	Date Created: 04/06/19
+	Most Recent Revision:
+-->
+
+<html>
+
+<head> 
+<title> Burger Shack </title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Burger Shack: The best burgers in town!</h1>
+    </header>
+
+<nav>
+
+	<hr />
+
+    <p><a href="index.html">Home</a></p>
+	<p><a href="menu.html">Menu</a></p>
+	<p><a href="contact.html">Contact Us</a></p>
+
+	<hr />
+
+</nav>
+
+<form action="submit.html" method="POST">
+  <label for="name">Name:</label><br />
+   <input type="text" id="name" name="name"><br />
+  <label for="email">Email:</label><br />
+   <input type="text" id="email" name="email"><br />
+  <label for="phone">Phone:</label><br />
+   <input type="text" id="phone" name="phone"><br />
+
+   <label for="inquiry">Reason for Inquiry:</label><br />
+     <select id="contact" name="contact">
+      <option value="default" selected>Catering</option>
+      <option value="private">Private Party</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+     </select>
+ 
+  
+  <section>
+    <label for="info">Additional Information:</label><br />
+     <textarea id="info" name="info"></textarea>
+  </section>
+ 
+
+     
+   <section>
+      <legend>Have you been to the resturant?</legend><br />
+       <input type="radio" id="choice1" name="questionnaire" value="no">
+        <label for="choice1">No</label>
+       <input type="radio" id="choice2" name="questionnaire" value="yes">
+        <label for="choice2">Yes</label>
+   </section> 
+
+     
+
+       <legend>Best days to contact you:</legend>
+        <input type="checkbox" id="monday" name="interest" value="monday">
+         <label for="monday">M</label>
+        <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+         <label for="tuesday">T</label>
+        <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+         <label for="wednesday">W</label>
+        <input type="checkbox" id="thursday" name="interest" value="thursday">
+         <label for="thursday">Th</label>
+        <input type="checkbox" id="friday" name="interest" value="friday">
+         <label for="friday">F</label>
+        <input type="submit" name="send" value="Send Request"><br />
+
+
+
+     
+</form>
+
+  <footer>
+  	<hr />
+  	 <p> 999 New York Ave, New York, NY 10010 </p>
+  	 <p> (718) 777-7777 </p>
+  </footer>  
+
+
+
+</body>
+</html>
