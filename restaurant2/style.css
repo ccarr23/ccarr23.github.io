@@ -1,0 +1,35 @@
+body {
+	background-color: #ffad33;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.btn-primary, .btn {
+	background-color: red;
+}
+
+.jumbotron {
+	background-color: red;
+	color: white;
+}
+
+.burger {
+ 
+ margin-top: 30px;
+ margin-bottom: 30px;
+
+}
+
+h2 {
+	margin-bottom: 50px;
+}
+
+.question, .contact {
+	margin-bottom: 50px;
+}
+
+table {
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
