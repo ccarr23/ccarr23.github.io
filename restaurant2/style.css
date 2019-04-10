@@ -25,7 +25,7 @@ h2 {
 }
 
 .question, .contact {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 table {
@@ -33,3 +33,7 @@ table {
 	margin-bottom: 100px;
 }
 
+.info {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
