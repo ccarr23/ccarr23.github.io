@@ -8,6 +8,12 @@ body {
 
 .btn-primary {
 	background-color: purple;
+	border-color: purple;
+}
+
+.btn-primary:hover {
+	background-color: hotpink;
+	border-color: purple;
 }
 
 .jumbotron {
