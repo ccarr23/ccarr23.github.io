@@ -129,3 +129,12 @@ textarea {
 	background-color: white;
 	resize: none;
 }
+
+.float-left {
+    margin-right: 30px; 
+    margin-bottom: 20px;
+}
+
+.exp {
+	margin-top: 200px;
+}
