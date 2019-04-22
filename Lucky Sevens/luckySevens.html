@@ -12,7 +12,7 @@
     <div class="container">
 
     <h1>Lucky Sevens</h1>
-    <form name="luckySevens" onsubmit="return gameResults();">
+    <form name="luckySevens" onsubmit="return playGame();">
 
       <div class="form-group">
         <label for="startingBet">Starting Bet:</label>
@@ -20,6 +20,7 @@
       </div>
 
     <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+    <button type="reset" onclick="resetGame();" id="resetButton" class="btn btn-primary" style = "display:none;">Reset</button>
     </form>
 
     </div>
@@ -30,19 +31,19 @@
         <h1>Results</h1>
         <tr>
           <td>Starting Bet</td>
-          <td><span id="startingBet"></td>
+          <td><span id="currentAmount"></td>
         </tr>
         <tr>
           <td>Total Rolls Before Going Broke</td>
-          <td><span id="totalRolls"></span></td>
+          <td><span id="diceRoll"></span></td>
         </tr>
         <tr>
           <td>Highest Amount Won</td>
-          <td><span id="amountWon"></span></td>
+          <td><span id="highestAmount"></span></td>
         </tr>
         <tr>
           <td>Roll Count at Highest Amount Won</td>
-          <td><span id="rollCount"></span></td>
+          <td><span id="totalRolls"></span></td>
         </tbody>
 
       </table>

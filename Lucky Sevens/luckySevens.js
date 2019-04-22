@@ -1,45 +1,76 @@
-function diceOne(numSides) {
-
-  return math.floor(Math.random() * numSides) + 1
-
-}
-
-function diceTwo(numSides) {
-
-  return math.floor(Math.random() * numSides) + 1
+function rollDice() {
+  var rollOne = Math.floor(Math.random() * 6) + 1;
+  var rollTwo = Math.floor(Math.random() * 6) + 1;
+  return rollOne + rollTwo;
 
 }
 
-function gameResults() {
-
-console.log(diceOne(6), diceTwo(6));
-
-  diceOne(6);
-  diceTwo(6);
+function playGame() {
+  console.log("inside function gameResults()");
 
 
+  let diceRoll = 0;
 
-  let startingBet = document.forms["luckySevens"]["startingBet"].value;
-  let totalRolls =  document.forms["luckySevens"]["totalRolls"].value;
-  let amountWon =   document.forms["luckySevens"]["amountWon"].value;
-  let rollCount =   document.forms["luckySevens"]["rollCount"].value;
+  let currentAmount = document.forms["luckySevens"]["startingBet"].value;
 
-  startingBet = Number(gameMoney);
+  currentAmount = Number(currentAmount);
+  let highestAmount = currentAmount;
 
-  for (let i = startingBet; i <= startingBet; i++) {
+  // if (currentAmount == "" || isNaN(currentAmount)) {
+  //
+  //   alert("Must enter an amount.");
+  //   document.getElementById("startingBet").value = null;
+  //   document.getElementById("startingBet").focus();
+  //
+  //   return;
+  //
+  // } else {
+  //
+  //  document.getElementById("resetButton").style.display = "in-line block";
+  //  document.getElementById("submitButton").style.display = "none";
+  //  document.getElementById("results").style.display = "block";
 
-  if (diceOne(6) + diceTwo(6) === 7) {
 
-    Number(gameMoney) + 1;
+  diceRoll = (Number(diceRoll));
+  let totalRolls = diceRoll;
 
-    //console.log(Number(gameMoney));
+ while (currentAmount > 0) {
 
-  } else if (diceOne(6) + diceTwo(6) > 7 || diceOne(6) + diceTwo(6) < 7) {
+   diceRoll++;
 
-    number(gameMoney) - 1;
+   //rollDice();
+  if (rollDice() == 7) {
 
-    //console.log(Number(gameMoney));
-  }
-  }
-  return false;
+     currentAmount += 4;
+
+   if (currentAmount > highestAmount) {
+
+       highestAmount += 4;
+       totalRolls = diceRoll;
+
+     }
+
+   } else {
+
+     currentAmount -= 1;
+
+
+   }
+
+   console.log("current amount is:", currentAmount);
+   console.log("highest amount is:", highestAmount);
+   console.log("highest roll count at highest win:", totalRolls);
+   console.log("current roll #:", diceRoll);
+
+
+ }
+ document.getElementById("currentAmount").innerText = currentAmount;
+ document.getElementById("diceRoll").innerText = diceRoll;
+ document.getElementById("highestAmount").innerText = highestAmount;
+ document.getElementById("totalRolls").innerText = totalRolls;
+
+
+
+return false;
+
 }
