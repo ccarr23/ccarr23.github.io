@@ -18,12 +18,6 @@ console.log(diceOne(6), diceTwo(6));
   diceTwo(6);
 
 
-
-  let startingBet = document.forms["luckySevens"]["startingBet"].value;
-  let totalRolls =  document.forms["luckySevens"]["totalRolls"].value;
-  let amountWon =   document.forms["luckySevens"]["amountWon"].value;
-  let rollCount =   document.forms["luckySevens"]["rollCount"].value;
-
   startingBet = Number(gameMoney);
 
   for (let i = startingBet; i <= startingBet; i++) {
