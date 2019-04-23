@@ -13,8 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title> Burger Shack </title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="restuarant.js"></script>
+
+<script type="text/javascript" src="restaurant.js"></script>
 </head>
 
 <body>
@@ -35,7 +37,10 @@
 
 </nav>
 
-<form action="submit.html" method="POST">
+
+<div class="container">
+
+<form name="contact" onsubmit="return validateForm();">
 
   <label for="name">Name:</label><br />
    <input type="text" id="name" name="name"><br />
@@ -84,12 +89,10 @@
          <label for="thursday">Th</label>
         <input type="checkbox" id="friday" name="interest" value="friday">
          <label for="friday">F</label>
-        <input type="submit" name="send" value="Send Request"><br />
+        <button type="submit" id="submitButton" class="btn btn-defualt">Submit</button><br />
       </div>
-
-
-
 </form>
+</div>
 
   <footer>
   	<hr />

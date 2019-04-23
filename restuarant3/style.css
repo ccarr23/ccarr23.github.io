@@ -4,6 +4,33 @@ body {
 	margin: 0 auto;
 }
 
+.d-md-block {
+	display: block;
+}
+
+.carouselExampleControls {
+
+	margin-bottom: 50px;
+
+}
+
+.carousel-item::after {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+box-shadow: 0px 0px 60px 40px black inset;
+
+}
+
+.carousel-caption {
+	text-shadow: 2px 2px #000;
+	font-size: 25px;
+	font-family: helvetica;
+}
+
 .btn-primary, .btn {
 	background-color: red;
 	border-color: red;
@@ -20,7 +47,7 @@ body {
 }
 
 .burger {
- 
+
  margin-top: 30px;
  margin-bottom: 30px;
 
@@ -28,6 +55,7 @@ body {
 
 .about {
 	margin-bottom: 100px;
+	margin-top: 100px;
 }
 
 h2 {
