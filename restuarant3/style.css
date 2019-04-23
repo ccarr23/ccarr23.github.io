@@ -1,0 +1,65 @@
+body {
+	background-color: #ffad33;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.btn-primary, .btn {
+	background-color: red;
+	border-color: red;
+}
+
+.btn-primary:hover {
+	background-color: #cc7a00;
+	border-color: #e68a00;
+}
+
+.jumbotron {
+	background-color: red;
+	color: white;
+}
+
+.burger {
+ 
+ margin-top: 30px;
+ margin-bottom: 30px;
+
+}
+
+.about {
+	margin-bottom: 100px;
+}
+
+h2 {
+	margin-bottom: 50px;
+}
+
+.question, .contact {
+	margin-bottom: 30px;
+}
+
+table {
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
+.info {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	padding: 20px;
+}
+
+td {
+	padding: 10px;
+}
+
+th {
+	background-color: #ff9900;
+}
+
+label {
+	margin-top: 15px;
+}

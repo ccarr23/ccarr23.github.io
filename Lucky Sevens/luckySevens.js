@@ -6,7 +6,7 @@ function rollDice() {
 }
 
 function playGame() {
-  console.log("inside function gameResults()");
+  console.log("inside function playGame()");
 
 
   let diceRoll = 0;
@@ -16,19 +16,19 @@ function playGame() {
   currentAmount = Number(currentAmount);
   let highestAmount = currentAmount;
 
-  // if (currentAmount == "" || isNaN(currentAmount)) {
-  //
-  //   alert("Must enter an amount.");
-  //   document.getElementById("startingBet").value = null;
-  //   document.getElementById("startingBet").focus();
-  //
-  //   return;
-  //
-  // } else {
-  //
-  //  document.getElementById("resetButton").style.display = "in-line block";
-  //  document.getElementById("submitButton").style.display = "none";
-  //  document.getElementById("results").style.display = "block";
+  if (currentAmount == "" || isNaN(currentAmount) || currentAmount < 0) {
+
+    alert("Must enter an amount.");
+    document.getElementById("startingBet").value = null;
+    document.getElementById("startingBet").focus();
+
+    return;
+
+  } else {
+
+   document.getElementById("resetButton").style.display = "in-line block";
+   document.getElementById("submitButton").style.display = "none";
+   document.getElementById("results").style.display = "block";
 
 
   diceRoll = (Number(diceRoll));
@@ -52,29 +52,40 @@ function playGame() {
 
    } else {
 
-<<<<<<< HEAD
-  startingBet = Number(gameMoney);
-=======
      currentAmount -= 1;
 
 
    }
->>>>>>> origin
 
    console.log("current amount is:", currentAmount);
    console.log("highest amount is:", highestAmount);
    console.log("highest roll count at highest win:", totalRolls);
    console.log("current roll #:", diceRoll);
 
-
  }
- document.getElementById("currentAmount").innerText = currentAmount;
- document.getElementById("diceRoll").innerText = diceRoll;
- document.getElementById("highestAmount").innerText = highestAmount;
- document.getElementById("totalRolls").innerText = totalRolls;
 
+// return false;
+
+document.getElementById("results").style.display = "block";
+document.getElementById("currentAmount").innerText = document.forms["luckySevens"]["startingBet"].value;
+document.getElementById("diceRoll").innerText = diceRoll;
+document.getElementById("highestAmount").innerText = highestAmount;
+document.getElementById("totalRolls").innerText = totalRolls;
 
 
 return false;
+
+ }
+}
+
+function resetGame() {
+
+  document.getElementById("startingBet").style.display = "block";
+  document.getElementById("submitButton").style.display = "inline-block";
+  document.getElementById("resetButton").style.display = "none";
+  document.getElementById("results").style.display = "none";
+
+  document.getElementById("startingBet").value = null;
+  document.getElementById("startingBet").focus();
 
 }
