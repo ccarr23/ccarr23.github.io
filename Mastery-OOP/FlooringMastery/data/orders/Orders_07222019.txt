@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Mozzie,OH,6.25,Carpet,500,2.25,2.10,1125.00,1050.00,135.94,2310.94
+2,Misty,OH,6.25,Carpet,600,2.25,2.10,1350.00,1260.00,163.13,2773.13

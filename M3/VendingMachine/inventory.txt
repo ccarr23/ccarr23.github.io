@@ -1,0 +1,9 @@
+1::Snickers::7::1.45
+2::Trix::0::2.00
+3::PayDay::4::1.30
+4::Twislers::4::0.30
+5::MilkyWay::0::0.85
+6::Butterfinger::1::1.15
+7::AlmondJoy::2::1.55
+8::100 Grand::2::1.60
+9::BabyRuth::3::1.00

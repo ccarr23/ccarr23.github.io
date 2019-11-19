@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Mike,OH,6.25,Laminate,500,1.75,2.10,875.00,1050.00,120.32,2045.32
+2,Suszie,PA,6.75,Wood,500,5.15,4.75,2575.00,2375.00,334.13,5284.13
+3,Brian,OH,6.25,Wood,100,5.15,4.75,515.00,475.00,61.88,1051.88

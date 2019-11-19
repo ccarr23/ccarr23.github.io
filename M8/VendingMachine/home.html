@@ -1,0 +1,155 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          body{   
+            padding-top: 60px;    
+          }   
+        </style>
+  </head>
+  <body data-gr-c-s-loaded="true">
+  
+    <div class="container-fluid" id="container">
+            <h1>Vending Machine</h1>
+            <hr />
+    <div class="grid-container" id=itemGrid>
+      <!-- Items -->       
+      </div> 
+
+      <div class="form-container">
+      <form class="form-horizontal" id="insertMoney">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>Total $ In:</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textinput"></label>  
+              <div class="col-md-4">
+              <input id="cashInput" name="textinput" type="text" placeholder="$0" class="form-control input-md">
+              <span class="help-block">Use buttons below to insert cash.</span>  
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="addNickle"></label>
+              <div class="col-md-4">
+                <button type='button' id="addNickle" name="addNickle" class="btn btn-primary">Add Nickle</button>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="addDime"></label>
+              <div class="col-md-4">
+                <button type='button' id="addDime" name="addDime" class="btn btn-primary">Add Dime</button>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="addQuarter"></label>
+              <div class="col-md-4">
+                <button type='button' id="addQuarter" name="addQuarter" class="btn btn-primary">Add Quarter</button>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="addDollar"></label>
+              <div class="col-md-4">
+                <button type='button' id="addDollar" name="addDollar" class="btn btn-primary">Add Dollar</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            <hr />
+            <form class="form-horizontal" id="buyItem">
+                    <fieldset>
+                    
+                    <!-- Form Name -->
+                    <legend>Messages</legend>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="message"></label>  
+                      <div class="col-md-4">
+                      <input id="message" name="message" type="text" placeholder="" class="form-control input-md">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="item">Item Selected:</label>  
+                      <div class="col-md-2">
+                      <input id="itemSelected" name="item" type="text" placeholder="Item" class="form-control input-md">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="confirmPurchase"></label>
+                      <div class="col-md-4">
+                        <button type='button' id="confirmPurchase" name="confirmPurchase" class="btn btn-primary">Buy</button>
+                      </div>
+                    </div>
+                    
+                    </fieldset>
+                    </form>
+                    <hr />
+                    <form class="form-horizontal" id="">
+                            <fieldset>
+                            
+                            <!-- Form Name -->
+                            <legend>Change</legend>
+                            
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="returnChange"></label>  
+                              <div class="col-md-4">
+                              <textarea id="changeInput" name="returnChange" type="text" placeholder="$0" class="form-control"></textarea>
+                                
+                              </div>
+                            </div>
+                            
+                            <!-- Button -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="returnChange"></label>
+                              <div class="col-md-4">
+                                <button type='button' id="returnChange" name="returnChange" class="btn btn-primary">Return Change</button>
+                              </div>
+                            </div>
+                            
+                            </fieldset>
+                            </form>
+      </div>
+    </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/dataService.js"></script>
+  <script src="js/home.js"></script>
+  
+  </div>
+</div>
+
+</body>

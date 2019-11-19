@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,Willis,OH,6.25,Wood,350,5.15,4.75,1802.50,1662.50,216.57,3681.57
